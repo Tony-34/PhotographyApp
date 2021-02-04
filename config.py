@@ -1,11 +1,15 @@
 import os
 import cloudinary
 
+from flask_sqlalchemy import SQLAlchemy
+
+db = SQLAlchemy()
+
 class Config:
     '''
     General configuration parent class
     '''
-    IMAGE_API_BASE_URL = 'https://pixabay.com/api/?key={}&q={}&image_type=photo&pretty=true'
+    IMAGE_API_BASE_URL = 'https ://pixabay.com/api/?key={}&q={}&image_type=photo&pretty=true'
     IMAGE_API_KEY = os.environ.get('IMAGE_API_KEY')
     SECRET_KEY = 'tony'
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Avamara34@localhost/photographyweb'
@@ -16,7 +20,7 @@ class Config:
         api_secret='8PnS4Jj90lxybYd-AKUpbDPj6jQ')
 
     #  email configurations
-    MAIL_SERVER = 'smtp.googlemail.com'
+    MAIL_SERVER = 'smtp.gmail.com'
     MAIL_PORT = 587
     MAIL_USE_TLS = True
     MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
