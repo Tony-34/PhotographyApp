@@ -20,7 +20,7 @@ class Config:
         api_secret='8PnS4Jj90lxybYd-AKUpbDPj6jQ')
 
     #  email configurations
-    MAIL_SERVER = 'smtp.gmail.com'
+    MAIL_SERVER = 'smtp.mail.com'
     MAIL_PORT = 587
     MAIL_USE_TLS = True
     MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
