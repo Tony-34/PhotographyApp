@@ -12,7 +12,7 @@ class Config:
     IMAGE_API_BASE_URL = 'https ://pixabay.com/api/?key={}&q={}&image_type=photo&pretty=true'
     IMAGE_API_KEY = os.environ.get('IMAGE_API_KEY')
     SECRET_KEY = 'tony'
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Avamara@localhost/photographyweb'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Avamara34@localhost/photographyweb'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     cloudinary.config(
         cloud_name='tee47-galleria',
