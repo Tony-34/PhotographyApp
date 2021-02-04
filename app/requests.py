@@ -45,8 +45,8 @@ def process_results(image_list):
 
 
 def search_image(search_term):
-    search_image_url = 'https://pixabay.com/api/?key={}&q={}&image_type=photo&pretty=true'.format(api_key, search_term)
-
+    search_image_url = ''.format(api_key, search_term)
+    print(search_image_url)
     with urllib.request.urlopen(search_image_url) as url:
         search_image_data = url.read()
         search_image_response = json.loads(search_image_data)

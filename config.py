@@ -9,8 +9,8 @@ class Config:
     '''
     General configuration parent class
     '''
-    IMAGE_API_BASE_URL = 'https ://pixabay.com/api/?key={}&q={}&image_type=photo&pretty=true'
-    IMAGE_API_KEY = os.environ.get('IMAGE_API_KEY')
+    IMAGE_API_BASE_URL ='https://pixabay.com/api/?key={}&q={}&image_type=photo&pretty=true'
+    IMAGE_API_KEY = '20152075-b271bc1fa41e70a57faee8cf5'
     SECRET_KEY = 'tony'
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Avamara34@localhost/photographyweb'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
